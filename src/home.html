@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0 , user-scalable=no">
+<title></title>
+<link rel=stylesheet type=text/css href=style/home.css>
+<link rel=stylesheet href=style/animate.css>
+<!-- <script src="js/common/rem.js"></script>	 -->
+<script>
+	(function (doc, win) {
+	    var docEl = doc.documentElement;
+	    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+	        recalc = function () {
+	            var clientWidth = docEl.clientWidth;
+	            if (!clientWidth) return;
+	            if(clientWidth>=750){
+	                docEl.style.fontSize = '100px';
+	            }else{
+	                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+	            }
+	        };
+
+	    if (!doc.addEventListener) return;
+	    win.addEventListener(resizeEvt, recalc, false);
+	    doc.addEventListener('DOMContentLoaded', recalc, false);
+	})(document, window);
+</script>
+<style type=text/css>
+	
+</style>
+</head>
+<body>
+	<section id=home class="page_layout home">
+		<img class="" src="img/000/home_r2_c2.jpg" alt="">
+		<p class="">Processing your booking</p>
+		<p>Requesting a takeoff clearance</p>
+	</section>
+	<section id=rank class="page_layout rank">
+		<img src="img/000/page1_r2_c2.jpg" alt="">
+		<p>GOOD AT EATING</p>
+		<div class="border_frame">
+			<div class="border_right toBottom"></div>
+			<div class="border_left"></div>
+		</div>
+		<div class="wenzi">
+			<p>会吃喝</p>
+			<p>美食 生鲜 零食 饮料</p>
+			<p>茶酒 坚果...</p>
+		</div>
+	</section>
+	<section id=BOM class="page_layout BOM">
+		<img src="img/000/page2_r2_c2.jpg" alt="">
+		<p>GOOD AT DRESSING</p>
+		<div class="border_frame">
+			<div class="border_right toBottom"></div>
+			<div class="border_left"></div>
+		</div>
+		<div class="wenzi">
+			<p>会打扮</p>
+			<p>洗面奶 保湿霜 润唇膏</p>
+			<p>粉底霜 香水...</p>
+		</div>
+	</section>
+	<section id=cityName class="page_layout cityName">
+		<img src="img/000/page3_r2_c2.jpg" alt="">
+		<p>GOOD AT LIVING</p>
+		<div class="border_frame">
+			<div class="border_right toBottom"></div>
+			<div class="border_left"></div>
+		</div>
+		<div class="wenzi">
+			<p>会生活</p>
+			<p>会花钱</p>
+			<p>粉底霜 香水...</p>
+		</div>
+	</section>
+	<section id=login class="page_layout login">
+		<p>那片笑声</p>
+		<p>让我想起我的那些花儿...</p>
+		<a href="">点击加入</a>
+	</section>
+</body>
+</html>
+<script type=text/javascript src=js/common/zepto.js></script>
+<script type=text/javascript src=js/common/director.js></script>
+<!-- <script type=text/javascript src=js/home.js></script>
+<script type=text/javascript src=js/rank.js></script>
+<script type=text/javascript src=js/login.js></script>
+<script type=text/javascript src=js/cityName.js></script> -->
+<!-- <script type=text/javascript src=js/BOM.js></script> -->
+<script type=text/javascript src=js/test.common.js></script>
+<script type=text/javascript src=js/app.js></script>
+<!-- <script type=text/javascript src=js/myroute.js></script> -->
+<!-- <script type=text/javascript src=js/init.js></script> -->
